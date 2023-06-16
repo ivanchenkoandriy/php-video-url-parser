@@ -18,7 +18,7 @@ return array(
         'Youtube' => array(
             'patterns' => array(
                 '#(?:<\>]+href=\")?(?:http://)?((?:[a-zA-Z]{1,4}\.)?youtube.com/(?:watch)?\?v=(.{11}?))[^"]*(?:\"[^\<\>]*>)?([^\<\>]*)(?:)?#',
-                '%(?:youtube\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i',
+                '%(?:youtube\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)|shorts/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i',
             ),
             'factory' => '\\RicardoFiorani\\Adapter\\Youtube\\Factory\\YoutubeServiceAdapterFactory',
         ),
